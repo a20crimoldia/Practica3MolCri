@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Practica3MolCri</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="nomCognoms">Nom i Cognoms</string>
+    <string name="introduirNom">Introdueix el teu nom</string>
+    <string name="adreca">Adreça</string>
+    <string name="introduirAdreca">Introdueix la teva adreça</string>
+    <string name="telefon">Telefon</string>
+    <string name="introduirTelefon">Introdueix el teu telefon</string>
+    <string name="note">Note</string>
+    <string name="introduirObservacions">Observacions</string>
+    <string name="titolMetodeEntrega">Metode de entrega</string>
+    <string name="rdbMisatger">Missatger</string>
+    <string name="rdbRecollidaBotiga">Recollida a la botiga</string>
+    <string name="btnDate">SELECCIONAR DATA</string>
+    <string name="btnComprar">COMPRAR</string>
+
+    <string name="titol">Best Fast Food</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="frase_Hambur">Hamburguesa igualita que la que te vamos a servir</string>
+    <string name="frase_Pizza">Pizza igualita que la que te vamos a servir</string>
+    <string name="frase_Frank">Frankfurt igualito al que te vamos a servir</string>
+
+    <string name="selHambur">Hamburguesa seleccionada</string>
+    <string name="selPizza">Pizza seleccionada</string>
+    <string name="selFrank">Frankfurt seleccionat</string>
+
+    <string-array name="labels_array">
+        <item>Fixe</item>
+        <item>Treball</item>
+        <item>Mobil</item>
+        <item>Altres</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

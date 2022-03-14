@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order">
+
+    <TextView
+        android:id="@+id/dadaTraida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/titol"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomCognom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/nomCognoms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dadaTraida"
+        app:layout_goneMarginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etNomCognom"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPersonName"
+        android:hint="@string/introduirNom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/nomCognom"
+        app:layout_constraintTop_toBottomOf="@+id/dadaTraida" />
+
+
+    <TextView
+        android:id="@+id/adreca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/adreca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomCognom"
+        app:layout_goneMarginStart="20dp" />
+
+
+    <EditText
+        android:id="@+id/etAdreca"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/introduirAdreca"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toEndOf="@+id/adreca"
+        app:layout_constraintTop_toBottomOf="@+id/etNomCognom" />
+
+    <TextView
+        android:id="@+id/telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/telefon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adreca"
+        app:layout_goneMarginStart="20dp" />
+
+
+    <EditText
+        android:id="@+id/etTelefon"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/introduirTelefon"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toEndOf="@+id/telefon"
+        app:layout_constraintTop_toBottomOf="@+id/etAdreca" />
+
+    <Spinner
+        android:id="@+id/typePhone"
+        android:layout_width="108dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:entries="@array/labels_array"
+        app:layout_constraintStart_toEndOf="@+id/etTelefon"
+        app:layout_constraintTop_toBottomOf="@+id/etAdreca" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefon"
+        app:layout_goneMarginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/introduirObservacions"
+        android:inputType="textCapSentences|textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toEndOf="@+id/note"
+        app:layout_constraintTop_toBottomOf="@+id/etTelefon" />
+
+    <TextView
+        android:id="@+id/titolMetodoEntrega"
+        android:layout_width="210dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/titolMetodeEntrega"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNote" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titolMetodoEntrega">
+
+        <RadioButton
+            android:id="@+id/misatger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbMisatger"/>
+
+        <RadioButton
+            android:id="@+id/pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbRecollidaBotiga"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/selData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#673AB7"
+        android:onClick="showDatePicker"
+        android:text="@string/btnDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/mostrarData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/selData"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#9C27B0"
+        android:onClick="clickComprar"
+        android:text="@string/btnComprar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selData" />
+
+
+</android.support.constraint.ConstraintLayout>
